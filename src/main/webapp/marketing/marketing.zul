@@ -1,0 +1,5 @@
+<window title="Marketing home" border="normal" width="350px" height="220px" apply="shiro.sample.MarketingComposer">
+	<button id="home" label="home"></button>
+	<button id="logout" label="logout"></button><separator/>
+	Only accessible to users with marketing role!!!
+</window>

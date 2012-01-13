@@ -1,0 +1,29 @@
+<?page id="testZul" title="CUSTOM ZK + Apache Shiro login"?>
+<window id="loginwin" title="CUSTOM ZK + Apache shiro login" border="normal" width="350px">
+    <!-- this form-login-page form is also used as the
+         form-error-page to ask for a login again. -->
+    <html style="color:red" if="${not empty requestScope.loginFailure}">
+      <![CDATA[
+        Your login attempt was not successful, try again.<br/><br/>
+       ]]>
+    </html>
+ 
+    <groupbox>
+    <caption>Login</caption>
+    <h:form id="f" name="loginform" action="" method="POST"
+    xmlns:h="native">
+        <grid>
+            <rows>
+                <row>User: <textbox id="u" name="user"/></row>
+                <row>Password: <textbox id="p" type="password" name="pass"/></row>
+                <row><checkbox id="r" name="remember"/>Remember</row>
+                <row spans="2">
+                    <hbox>
+                        <h:input type="submit" value="Login"/>
+                    </hbox>
+                </row>
+            </rows>
+        </grid>
+    </h:form>
+    </groupbox>
+</window>

@@ -1,0 +1,16 @@
+<window title="ZK + Apache Shiro application home" border="normal" width="350px" height="220px" apply="shiro.sample.HomeComposer">
+	<label id="user" value=""></label>
+	<grid height="200px">
+		<rows>
+			<row>
+				<a label="Marketing" href="/marketing/marketing.zul"></a>	
+			</row>
+			<row>
+				<a label="Products" href="/products/products.zul"></a>	
+			</row>
+			<row>
+				<a label="Sales" href="/sales/sales.zul"></a>	
+			</row>
+		</rows>
+	</grid>
+</window>

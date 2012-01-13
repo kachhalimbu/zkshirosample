@@ -1,0 +1,5 @@
+<window title="Sales home" border="normal" width="350px" height="220px" apply="shiro.sample.SalesComposer">
+	<button id="home" label="home"></button>
+	<button id="logout" label="logout"></button><separator/>
+	Only accessible to users with sales role!!!
+</window>
